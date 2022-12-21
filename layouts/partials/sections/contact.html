@@ -10,7 +10,7 @@
   </div>
 
 
-  <form name="contact" method="POST" data-netlify="true" enctype="multipart/form-data">
+  <form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true" enctype="multipart/form-data">
     <div class="row center-xs">
       <div class="col-xs-12 col-sm-6">
         <input type="text" name="name" placeholder="{{ i18n "name" }}" />
@@ -27,8 +27,9 @@
         <input name="file" value="optional" type="file"/>
       </div>
       
-      <input id="form-submit" type="submit" value="{{ i18n "send" }}">
-
+      <div data-netlify-recaptcha="true"></div>
+        <input id="form-submit" type="submit" value="{{ i18n "send" }}">
+      </div>
     </div>
   </form>
 
