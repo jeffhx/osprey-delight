@@ -9,6 +9,29 @@
     </div>
   </div>
 
+  <form name="contact" method="POST" data-netlify="true" enctype="multipart/form-data">
+    <div class="row center-xs">
+      <div class="col-xs-12 col-sm-6">
+        <input type="text" name="name" placeholder="{{ i18n "name" }}" />
+      </div>
+      <div class="col-xs-12 col-sm-6">
+        <input type="email" name="email" placeholder="{{ i18n "email" }}" />
+      </div>
+
+      <div class="col-xs-12">
+        <textarea name="message" placeholder="{{ i18n "message" }}"></textarea>
+      </div>
+
+      <div class="col-xs-12">
+        <input name="file" value="optional" type="file"/>
+      </div>
+      
+      <input id="form-submit" type="submit" value="{{ i18n "send" }}">
+
+    </div>
+  </form>
+
+  <!--
   <form id="form-contact" action="https://formspree.io" method="POST">
     <div class="row center-xs">
       <div class="col-xs-12 col-sm-6"><input type="text" name="name" aria-label="name" placeholder="{{ i18n "name" }}" required></div>
@@ -37,4 +60,5 @@
       </div>
     </div>
   </form>
+  -->
 </div>
