@@ -27,8 +27,10 @@
         <input name="file" value="optional" type="file"/>
       </div>
       
-      <div data-netlify-recaptcha="true"></div>
-        <input id="form-submit" type="submit" value="{{ i18n "send" }}">
+      <div class="col-xs-12">
+        <div data-netlify-recaptcha="true">
+          <input id="form-submit" type="submit" value="{{ i18n "send" }}">
+        </div>
       </div>
     </div>
   </form>
